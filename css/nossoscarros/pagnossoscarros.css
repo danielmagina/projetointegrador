@@ -1,0 +1,50 @@
+.carros-h1 {
+    margin-top: 64px;
+    font-size: 64px;
+    line-height: 1.125;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.carros-h1 span {
+    font-size: 62px;
+    color: #DCC920;
+}
+
+.carros {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carros-2 {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carros-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.carros-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botao-vejamais{ 
+    margin-top: 14px;
+}

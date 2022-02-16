@@ -1,0 +1,42 @@
+.quemsomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quemsomos-titulo h1 {
+    margin-top: 64px;
+    font-size: 64px;
+    line-height: 1.125;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.quemsomos-titulo h1 span {
+    color: #DCC920;
+}
+
+.quemsomos-titulo h2 {
+    margin-top: 64px;
+    color: #111111;
+    font-size: 24px;
+    line-height: 1.125;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.quemsomos-titulo h2 span {
+    color: #DCC920;
+}
+
+.quemsomos-conteudo p {
+    margin-top: 32px;
+    font-family: 'Roboto';
+    line-height: 1.25;
+    text-align: justify;
+}

@@ -1,0 +1,101 @@
+.quemsomos-color {
+  color: #FFFFFF;
+  font-family: 'Poppins';
+}
+
+.quemsomos-bg {
+  background: #000000;
+}
+
+.quemsomos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.quemsomos-imagem {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.quemsomos-conteudo {
+  padding-top: 16px;
+  padding-bottom: 160px;
+}
+
+.quemsomos-conteudo > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.quemsomos-conteudo h2 {
+  font-size: 48px;
+  margin-bottom: 32px;
+}
+
+.quemsomos-conteudo > p {
+  margin-bottom: 20px;
+}
+
+.quemsomos a {
+  margin-bottom: 80px;
+}
+
+.quemsomos-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.quemsomos-vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.quemsomos-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+#modelo {
+  display: inline-block;
+  color: #000000;
+  font: 500 1rem "Poppins", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #F6DF07;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.quemsomos-interrogacao {
+  color: #F6DF07;
+}
+
+@media (max-width: 800px) {
+  .quemsomos-bg {
+    box-shadow: initial;
+  }
+  .quemsomos {
+    grid-template-columns: 1fr;
+  }
+  .quemsomos-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .quemsomos-imagem {
+    display: none;
+  }
+  .quemsomos a {
+    margin-bottom: 60px;
+  }
+}
+  
+@media (max-width: 600px) {
+  .quemsomos-vantagens {
+    flex-direction: column;
+  }
+}

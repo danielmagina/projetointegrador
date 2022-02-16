@@ -1,0 +1,16 @@
+.cadastro-titulo {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.cadastro {
+    grid-column-start: 2;
+}
+
+.cadastro-bg {
+    margin-bottom: 80px;
+    padding: 200px
+}

@@ -1,0 +1,74 @@
+.noticias-tamanho {
+    max-width: 1600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noticias-titulo {
+    text-align: center;
+    padding-top: 64px;
+    font-size: 64px;
+    line-height: 1.125;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.noticias-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.section-economia, .section-mundo , .section-carros {
+    max-width: 360px;
+}
+
+.section-economia h2, .section-mundo h2, .section-carros h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.imagem-noticias { 
+    border-radius: 5px;
+}
+
+.subtitulo-noticias {
+    margin-bottom: 20px;
+    margin-top: 18px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    letter-spacing: -0.6px;
+}
+
+.sub-noticias-tamanho {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    max-width: 1600px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+    .noticias-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .noticias-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

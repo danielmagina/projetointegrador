@@ -1,0 +1,86 @@
+.subtitulo-nossoscarros {
+    font: 600 2rem/1.125 "Poppins", sans-serif;
+}
+
+.tipo-carro {
+    font: 600 1rem "Poppins", sans-serif;
+    color: #000000;
+}
+
+.preco-carro {
+    font: 600 1rem "Roboto", sans-serif;
+    color: #000000;
+}
+
+.nossoscarros-lista {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.nossoscarros-lista h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nossoscarros-lista ul {
+    display: flex;
+    gap: 40px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+.nossoscarros-lista li {
+    flex: 1;
+    min-width: 280px;
+}
+
+.nossoscarros-lista a {
+    display: block;
+}
+
+.nossoscarros-lista img {
+    margin-bottom: 16px;
+}
+
+.nossoscarros-lista h3 {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.nossoscarros-lista h3::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    background-color: #FFE600;
+    transition: width 0.2s;
+}
+
+.nossoscarros-lista a:hover h3::before {
+    width: 24px;
+}
+
+.nossoscarros-lista li span {
+    padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+    .nossoscarros-lista {
+        padding-bottom: 60px;
+    }
+
+    .nossoscarros-lista ul {
+        gap: 20px;
+    }
+}
