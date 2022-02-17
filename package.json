@@ -1,0 +1,23 @@
+{
+  "name": "projetointegrador",
+  "version": "1.0.0",
+  "description": "[![NPM](https://img.shields.io/npm/l/react)](https://github.com/danielmagina/read/blob/main/LICENSE)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmagina/projetointegrador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielmagina/projetointegrador/issues"
+  },
+  "homepage": "https://github.com/danielmagina/projetointegrador#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
