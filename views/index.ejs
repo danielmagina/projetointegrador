@@ -1,0 +1,87 @@
+<%- include('partials/header') %>
+
+<main class="introducao-bg">
+  <div class="introducao">
+    <div class="introducao-conteudo">
+      <h1>Carros elétricos brasileiros <span>.</span></h1>
+      <p>
+        São mais do que carros, é conforto, velocidade, tecnologia e performance.
+      </p>
+      <a href="./cadastro.html" class="botao">Cadastre-se</a>
+    </div>
+    <div class="introducao-imagem">
+      <img src="images/carro-introducao.png" alt="Foto de um carro">
+    </div>
+  </div>
+</main>
+
+<article class="nossoscarros-lista">
+  <h2 class='subtitulo-nossoscarros container'>Nossos Carros</h2>
+
+  <ul>
+    <li>
+      <a href="./nossoscarros/renault.html">
+        <img src="images/renault.png" alt="Renault Zoe">
+        <h3 class="tipo-carro">Renault Zoe</h3>
+        <span class="preco-carro">R$ 79.990</span>
+      </a>
+    </li>
+    <li>
+      <a href="./nossoscarros/tesla.html">
+        <img src="images/tesla.png" alt="Tesla Model 3">
+        <h3 class="tipo-carro">Tesla Model 3</h3>
+        <span class="preco-carro">R$ 120.500</span>
+      </a>
+    </li>
+    <li>
+      <a href="./nossoscarros/volvo.html">
+        <img src="images/volvo.png" alt="Volvo XC - 40">
+        <h3 class="tipo-carro">Volvo XC - 40</h3>
+        <span class="preco-carro">R$ 180.000</span>
+      </a>
+    </li>
+  </ul>
+</article>
+
+<article class="quemsomos-bg">
+  <div class="quemsomos container">
+    <div class="quemsomos-conteudo">
+      <h2 class="quemsomos-color">Quem somos<span class="quemsomos-interrogacao">?</span></h2>
+      <p class="quemsomos-color">Somos a empresa pioneira em carros elétricos no Brasil. São mais de 20 anos
+        promovendo a locomoção com consciência e responsabilidade.</p>
+      <a id="modelo" class="quemsomos-color" class="escolha-modelo" href="./nossoscarros.html">Escolha um modelo</a>
+      <div class="quemsomos-vantagens">
+        <div>
+          <img src="images/feedback_white_24dp 1.png" alt="">
+          <h3 class="quemsomos-color">Melhores Feedbacks</h3>
+          <p class="quemsomos-color">Canal de feedbacks</p>
+        </div>
+        <div>
+          <img src="images/shopping_cart_white_24dp.png" alt="">
+          <h3 class="quemsomos-color">Melhores Preços</h3>
+          <p class="quemsomos-color">Melhores preços do mercado</p>
+        </div>
+      </div>
+    </div>
+    <div class="quemsomos-imagem">
+      <img src="images/bmw.png" alt="">
+    </div>
+  </div>
+</article>
+
+<article class="noticias-bg">
+  <div class="noticias container">
+    <div class="noticias-imagem">
+      <a href="./noticias.html"><img src="img/skoda 1.png" alt=""></a>
+    </div>
+    <div class="quemsomos-conteudo">
+      <h2 class="noticias-color">Notícias</h2>
+      <a href="./noticias.html">
+        <p id="paragrafo-noticias" class="noticias-color">SUV cupê da Skoda é elétrico,esportivo e busca inspiraçãono
+          Tesla Model X.</p>
+      </a>
+    </div>
+  </div>
+</article>
+
+<%- include('partials/footer') %>
