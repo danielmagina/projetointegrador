@@ -1,106 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<%- include('partials/header') %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main class="cadastro-bg">
+  <section class="conteudo-cadastro">
+    <h1 class="cadastro-titulo">Cadastro</h1>
+    <form class="form-2" action="./cadastro.html">
+      <div class="cadastro">
+        <div>
+          <label for="email-cadastro">Email</label>
+          <input type="email" id="email-cadastro" name="email-cadastro" placeholder="Seu email">
+        </div>
+        <div>
+          <label for="senha-cadastro">Senha</label>
+          <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Sua Senha">
+        </div>
+        <button type="submit" class="botao cadastrse">Cadastre-se</button>
+        <button type="submit" class="botao">Já é cadastrado?</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
  
-  <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
-
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
-
-  <!-- WHATS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <title>Cadastro</title>
-</head>
-
-<body>
-
-  <header class="header-bg">
-    <div class="header">
-      <a href="./">
-        <img src="images/logo.png" alt="Logo EletriCar">
-      </a>
-      <nav aria-label="primaria">
-        <ul class="header-menu">
-          <li><a href="./nossoscarros">Nossos Carros</a></li>
-          <li><a href="./quemsomos">Quem Somos</a></li>
-          <li><a href="./noticias">Notícias</a></li>
-          <li><a href="./contato">Contato</a></li>
-          <li><a href="./cadastro">Cadastre-se</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="cadastro-bg">
-    <section class="conteudo-cadastro">
-      <h1 class="cadastro-titulo">Cadastro</h1>
-      <form class="form-2" action="./cadastro.html">
-        <div class="cadastro">
-          <div>
-            <label for="email-cadastro">Email</label>
-            <input type="email" id="email-cadastro" name="email-cadastro" placeholder="Seu email">
-          </div>
-          <div>
-            <label for="senha-cadastro">Senha</label>
-            <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Sua Senha">
-          </div>
-          <button type="submit" class="botao cadastrse">Cadastre-se</button>
-          <button type="submit" class="botao">Já é cadastrado?</button>
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer-bg">
-    <div class="footer container">
-      <img class="logo-footer" src="img/logo.png" alt="EletriCar">
-      <div class="footer-contato">
-        <h3 class="subtitulo-footer">Contatos</h3>
-        <ul>
-          <li><a href="tel:+5521999999">+55 21 99999-0000</a></li>
-          <li><a href="maito:contato@eletricar.com">contato@eletricar.com</a></li>
-          <li>Rua Felipe Schimt, 52 - Centro</li>
-          <li>Florianópolis- SC</li>
-        </ul>
-        <div class="footer-redes">
-          <a href="./">
-            <img src="images/instagram-p.svg" alt="Instagram">
-          </a>
-          <a href="./">
-            <img src="images/facebook-p.svg" alt="Facebook">
-          </a>
-          <a href="./">
-            <img src="images/youtube-p.svg" alt="Youtube">
-          </a>
-        </div>
-      </div>
-      <div class="footer-informacoes">
-        <h3 class="subtitulo-footer">Informações</h3>
-        <nav>
-          <ul>
-            <li><a href="./nossoscarros">Nossos Carros</a></li>
-            <li><a href="./quemsomos">Quem Somos</a></li>
-            <li><a href="./noticias">Notícias</a></li>
-            <li><a href="./contato">Contato</a></li>
-            <li><a href="./termos">Termos e Condições</a></li>
-          </ul>
-        </nav>
-      </div>
-      <p class="copyright">EletriCar ©️ Alguns direitos reservados.</p>
-    </div>
-    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone+5524999043393" target="_blank">
-      <i class="fa fa-whatsapp"></i>
-    </a>
-  </footer>
-
-</body>
-
-</html>
