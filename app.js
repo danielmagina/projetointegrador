@@ -31,8 +31,8 @@ app.use('/cadastro', cadastroRouter);
 app.use('/nossoscarros', nossoscarrosRouter);
 app.use('/noticias', noticiasRouter);
 app.use('/quemsomos', quemsomosRouter);
-app.use('/enviar_cadastro', enviar_cadastroRouter);
-app.use('/enviar_contato', enviar_contatoRouter);
+//app.use('/enviar_cadastro', enviar_cadastroRouter);
+//app.use('/enviar_contato', enviar_contatoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
