@@ -31,6 +31,10 @@ app.use('/cadastro', cadastroRouter);
 app.use('/nossoscarros', nossoscarrosRouter);
 app.use('/noticias', noticiasRouter);
 app.use('/quemsomos', quemsomosRouter);
+
+app.use((req, res, next)=> {
+  res.status(404).render('not-found')
+ });
 //app.use('/enviar_cadastro', enviar_cadastroRouter);
 //app.use('/enviar_contato', enviar_contatoRouter);
 
