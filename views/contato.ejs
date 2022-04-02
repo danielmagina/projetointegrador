@@ -1,137 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<%- include('partials/header') %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
-
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
-  <title>Contato</title>
-</head>
-
-<body id="contato">
-
-  <header class="header-bg">
-    <div class="header">
-      <a href="./">
-        <img src="images/logo.png" alt="Logo EletriCar">
-      </a>
-      <nav aria-label="primaria">
-        <ul class="header-menu">
-          <li><a href="./nossoscarros">Nossos Carros</a></li>
-          <li><a href="./quemsomos">Quem Somos</a></li>
-          <li><a href="./noticias">Notícias</a></li>
-          <li><a href="./contato">Contato</a></li>
-          <li><a href="./cadastro">Cadastre-se </a></li>
-        </ul>
-      </nav>
+<main>
+  <div class="titulo-bg">
+    <div class="titulo container">
+      <p class="titulo-paragrafo">Respostas em até 24h</p>
+      <h1 class="titulo-formulario">nosso contato<span>.</span></h1>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <div class="titulo-bg">
-      <div class="titulo container">
-        <p class="titulo-paragrafo">Respostas em até 24h</p>
-        <h1 class="titulo-formulario">nosso contato<span>.</span></h1>
+  <div class="contato container">
+    <section class="contato-dados" aria-label="Endereço">
+      <h2 class="font-1-m cor-0">Loja Online</h2>
+      <div class="contato-endereco font-2-s cor-4">
+        <p>Rua Ali Perto, 35</p>
+        <p>Rio de Janeiro - RJ</p>
+        <p>Brasil - Terra - Vita Láctea</p>
       </div>
-    </div>
-
-    <div class="contato container">
-      <section class="contato-dados" aria-label="Endereço">
-        <h2 class="font-1-m cor-0">Loja Online</h2>
-        <div class="contato-endereco font-2-s cor-4">
-          <p>Rua Ali Perto, 35</p>
-          <p>Rio de Janeiro - RJ</p>
-          <p>Brasil - Terra - Vita Láctea</p>
-        </div>
-        <address class="contato-meios">
-          <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
-          <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-          <a href="tel:+552199999999">+55 21 9999-9999</a>
-        </address>
-        <div class="contato-redes">
-          <a href="./">
-            <img src="./images/instagram-p.svg" alt="Instagram">
-          </a>
-          <a href="./">
-            <img src="./images/facebook-p.svg" alt="Facebook">
-          </a>
-          <a href="./">
-            <img src="./images/youtube-p.svg" alt="Youtube">
-          </a>
-        </div>
-      </section>
-
-      <section class="contato-formulario" aria-label="Formulário">
-        <form class="form" action="./contato.html">
-          <div>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome">
-          </div>
-          <div>
-            <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999">
-          </div>
-          <div class="col-2">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="contato@email.com">
-          </div>
-          <div class="col-2">
-            <label for="mensagem">Mensagem</label>
-            <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
-          </div>
-          <button class="botao col-2">Enviar Mensagem</button>
-        </form>
-      </section>
-    </div>
-  </main>
-
-  <footer class="footer-bg">
-    <div class="footer container">
-      <img class="logo-footer" src="images/logo.png" alt="EletriCar">
-      <div class="footer-contato">
-        <h3 class="subtitulo-footer">Contatos</h3>
-        <ul>
-          <li><a href="tel:+5521999999">+55 21 99999-0000</a></li>
-          <li><a href="maito:contato@eletricar.com">contato@eletricar.com</a></li>
-          <li>Rua Felipe Schimt, 52 - Centro</li>
-          <li>Florianópolis- SC</li>
-        </ul>
-        <div class="footer-redes">
-          <a href="./">
-            <img src="images/instagram-p.svg" alt="Instagram">
-          </a>
-          <a href="./">
-            <img src="images/facebook-p.svg" alt="Facebook">
-          </a>
-          <a href="./">
-            <img src="images/youtube-p.svg" alt="Youtube">
-          </a>
-        </div>
+      <address class="contato-meios">
+        <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+        <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+        <a href="tel:+552199999999">+55 21 9999-9999</a>
+      </address>
+      <div class="contato-redes">
+        <a href="./">
+          <img src="./images/instagram-p.svg" alt="Instagram">
+        </a>
+        <a href="./">
+          <img src="./images/facebook-p.svg" alt="Facebook">
+        </a>
+        <a href="./">
+          <img src="./images/youtube-p.svg" alt="Youtube">
+        </a>
       </div>
-      <div class="footer-informacoes">
-        <h3 class="subtitulo-footer">Informações</h3>
-        <nav>
-          <ul>
-            <li><a href="./nossoscarros">Nossos Carros</a></li>
-            <li><a href="./quemsomos">Quem Somos</a></li>
-            <li><a href="./noticias">Notícias</a></li>
-            <li><a href="./contato">Contato</a></li>
-            <li><a href="./termos">Termos e Condições</a></li>
-          </ul>
-        </nav>
-      </div>
-      <p>EletriCar ©️ Alguns direitos reservados.</p>
-    </div>
-  </footer>
+    </section>
 
-</body>
+    <section class="contato-formulario" aria-label="Formulário">
+      <form class="form" action="./enviar_contato" method="post">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </div>
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999">
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="contato@email.com">
+        </div>
+        <div class="col-2">
+          <label for="mensagem">Mensagem</label>
+          <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+        </div>
+        <button class="botao col-2">Enviar Mensagem</button>
+      </form>
+    </section>
+  </div>
+</main>
 
-</html>
+  <%- include('partials/footer') %>
