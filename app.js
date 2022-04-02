@@ -12,6 +12,7 @@ var nossoscarrosRouter = require('./routes/nossoscarros');
 var noticiasRouter = require('./routes/noticias');
 var quemsomosRouter = require('./routes/quemsomos');
 
+
 var app = express();
 
 // view engine setup
