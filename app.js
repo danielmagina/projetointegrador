@@ -4,18 +4,18 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var contatoRouter = require('./routes/contato');
-var cadastroRouter = require('./routes/cadastro');
-var nossoscarrosRouter = require('./routes/nossoscarros');
-var noticiasRouter = require('./routes/noticias');
-var quemsomosRouter = require('./routes/quemsomos');
+var indexRouter = require('./src/routes/index');
+var usersRouter = require('./src/routes/users');
+var contatoRouter = require('./src/routes/contato');
+var cadastroRouter = require('./src/routes/cadastro');
+var nossoscarrosRouter = require('./src/routes/nossoscarros');
+var noticiasRouter = require('./src/routes/noticias');
+var quemsomosRouter = require('./src/routes/quemsomos');
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, './src/views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
