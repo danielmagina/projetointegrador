@@ -15,6 +15,7 @@ var quemsomosRouter = require('./src/routes/quemsomos');
 var app = express();
 
 // view engine setup
+
 app.set('views', path.join(__dirname, './src/views'));
 app.set('view engine', 'ejs');
 
