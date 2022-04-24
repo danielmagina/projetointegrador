@@ -1,0 +1,23 @@
+ <%- include('partials/header') %> 
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>clientes</h1>
+    <h3>Lista de clientes dados aqui</h3>
+    <% clientes.forEach(cliente => { %>
+
+
+ <%= cliente.nome %>
+ <%= cliente.CEP %>
+ <%= cliente.bairro %>
+ 
+
+<% }) %>
+
+
+
+  </body>
+</html> 
+
+
+

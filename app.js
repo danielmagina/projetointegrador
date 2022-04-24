@@ -11,12 +11,14 @@ var cadastroRouter = require('./src/routes/cadastro');
 var nossoscarrosRouter = require('./src/routes/nossoscarros');
 var noticiasRouter = require('./src/routes/noticias');
 var quemsomosRouter = require('./src/routes/quemsomos');
+var clientesRouter = require('./src/routes/clientes')
+
 
 var app = express();
 
 // view engine setup
 
-app.set('views', path.join(__dirname, './src/views'));
+app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -32,6 +34,7 @@ app.use('/cadastro', cadastroRouter);
 app.use('/nossoscarros', nossoscarrosRouter);
 app.use('/noticias', noticiasRouter);
 app.use('/quemsomos', quemsomosRouter);
+app.use('/clientes', clientesRouter);
 
 app.use((req, res, next)=> {
   res.status(404).render('not-found')
