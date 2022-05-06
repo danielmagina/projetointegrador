@@ -1,10 +1,10 @@
 
-const {Clientes} = require ('../models');
+const {Cliente} = require ('../models');
 
 module.exports = {
     async index(req, res, next) {
         try{  
-        const clientes = await Clientes.findAll();
+        const clientes = await Cliente.findAll();
  
         return res.render('clientes', { clientes});
         } catch (erro){
