@@ -29,8 +29,10 @@
 }
 
 .nossoscarros-lista ul {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,
+    minmax(200px, 1fr));
     padding: 0 20px 20px 20px;
     max-width: 1400px;
     margin-left: auto;
