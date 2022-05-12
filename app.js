@@ -12,6 +12,7 @@ var nossoscarrosRouter = require('./src/routes/nossoscarros');
 var noticiasRouter = require('./src/routes/noticias');
 var quemsomosRouter = require('./src/routes/quemsomos');
 var clientesRouter = require('./src/routes/clientes')
+var loginRouter = require('./src/routes/login')
 
 
 var app = express();
@@ -35,6 +36,7 @@ app.use('/nossoscarros', nossoscarrosRouter);
 app.use('/noticias', noticiasRouter);
 app.use('/quemsomos', quemsomosRouter);
 app.use('/clientes', clientesRouter);
+app.use('/login', loginRouter);
 
 app.use((req, res, next)=> {
   res.status(404).render('not-found')

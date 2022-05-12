@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<main class="login-bg">
+
+  <section class="contato-formulario" aria-label="Formulário">
+    <form class="form" action="./enviar_login" method="post"> 
+      
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="contato@email.com" maxlength="100">
+      </div>
+
+      <div >
+        <label for="senha">Endereço</label>
+        <input type="text" id="senha" name="senha" placeholder="******">
+      </div>
+
+      <button class="botao col-2">Login</button>
+      <button class="botao col-2">Cadastre-se</button>
+    </form>
+  </section>
+</main>
+<br>
+<br>
+<br>
+<br>
+<%- include('partials/footer') %>
