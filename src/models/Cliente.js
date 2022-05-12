@@ -12,7 +12,7 @@ const Cliente = sequelize.define('Cliente',{
     },
     telefone: {
         type: DataType.STRING,
-        allowNull: false
+        allowNull: true
     },
     email: {
         type: DataType.STRING,
@@ -20,27 +20,27 @@ const Cliente = sequelize.define('Cliente',{
     },
     endereço: {
         type: DataType.STRING,
-        allowNull: false
+        allowNull: true
     },
     CEP: {
         type: DataType.STRING,
-        allowNull: false
+        allowNull: true
     },
     bairro: {
         type: DataType.STRING,
-        allowNull: false
+        allowNull: true
     },
     cidade: {
         type: DataType.STRING,
-        allowNull: false
+        allowNull: true
     },
     estado: {
         type: DataType.STRING,
-        allowNull: false
+        allowNull: true
     },
     complemento: {
         type: DataType.STRING,
-        allowNull: false
+        allowNull: true
     }
 }, {
 tableName:'clientes',
