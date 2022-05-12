@@ -1,0 +1,16 @@
+.login-titulo {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.login {
+    grid-column-start: 2;
+}
+
+.login-bg {
+    margin-bottom: 80px;
+    padding: 200px
+}
