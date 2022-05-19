@@ -1,23 +1,44 @@
- <%- include('partials/header') %> 
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>clientes</h1>
-    <h3>Lista de clientes dados aqui</h3>
-    <% clientes.forEach(cliente => { %>
+<%- include('partials/header') %> 
+    
+  <main>
+    
+    <div class="row">
+      <table class="turmas">
+        <caption class="turmas-header">Clientes</caption>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Endereço</th>
+            <th>Cep</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Complemento</th>
+          </tr>
+        </thead>
 
-
- <%= cliente.nome %>
- <%= cliente.CEP %>
- <%= cliente.bairro %>
- 
-
-<% }) %>
-
-
-
-  </body>
-</html> 
+        <tbody>
+          <% clientes.forEach(clientes => { %>
+          <tr>
+            <td><%= clientes.nome %> </td>
+            <td><%= clientes.telefone %></td>
+            <td><%= clientes.email %></td>
+            <td><%= clientes.endereco %></td>
+            <td><%= clientes.cep %></td>
+            <td><%= clientes.bairro %></td>
+            <td><%= clientes.cidade %></td>
+            <td><%= clientes.estado %></td>
+            <td><%= clientes.complemento %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </main>      
+  
+  <%- include('partials/footer') %> 
 
 
 

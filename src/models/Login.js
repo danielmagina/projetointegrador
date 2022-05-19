@@ -6,6 +6,10 @@ module.exports = (sequelize, DataType) => {
             autoIncrement: true ,
             allowNull: false
         },
+        clientes_id: {
+            type: DataType.INTEGER,
+            allowNull: false
+        },
         email: {
             type: DataType.STRING,
             allowNull: false
@@ -18,6 +22,13 @@ module.exports = (sequelize, DataType) => {
     tableName:'login',
     timestamps: false
     });
+
+    Login.associate = (models) => {
+        Login.belongsTo(models.Cliente, {
+            foreignKey: 'login_id',
+            as: 'login'
+        })
+    }
     
     return Login;
     }

@@ -18,11 +18,11 @@ const Cliente = sequelize.define('Cliente',{
         type: DataType.STRING,
         allowNull: false
     },
-    endereço: {
+    endereco: {
         type: DataType.STRING,
         allowNull: true
     },
-    CEP: {
+    cep: {
         type: DataType.STRING,
         allowNull: true
     },
