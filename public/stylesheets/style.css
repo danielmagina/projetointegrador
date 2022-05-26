@@ -8,6 +8,7 @@
 @import './home/quemsomos.css';
 @import './home/noticias.css';
 @import './global/footer.css';
+@import './login/login.css'; /*adicionado login/login.css*/
 
 /* COMPONENTES */
 @import './utilidades/componentes.css';

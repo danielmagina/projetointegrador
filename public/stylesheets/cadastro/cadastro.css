@@ -11,11 +11,15 @@
 }
 
 .cadastro-bg {
-    margin-bottom: 80px;
-    padding: 200px
+    margin-bottom: 80px auto;
+    margin-top: 100px auto;
+    padding: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* PAGINA CLIENTES TESTE */ 
+/* PAGINA CLIENTES TESTE */   
 
 .row {
     display: flex;
