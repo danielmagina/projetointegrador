@@ -7,6 +7,7 @@
 @import './home/nossoscarros.css';
 @import './home/quemsomos.css';
 @import './home/noticias.css';
+@import'./loading/processBuy.css'; /* add processBuy */
 @import './global/footer.css';
 @import './login/login.css'; /*adicionado login/login.css*/
 
@@ -22,6 +23,7 @@
 
 /* NOSSOS CARROS */
 @import './nossoscarros/pagnossoscarros.css';
+
 
 /* NOTÍCIAS */
 @import './noticias/pagnoticias.css';

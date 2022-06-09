@@ -10,6 +10,7 @@ var contatoRouter = require('./src/routes/contato');
 var cadastroRouter = require('./src/routes/cadastro');
 var nossoscarrosRouter = require('./src/routes/nossoscarros');
 var noticiasRouter = require('./src/routes/noticias');
+var loadingRouter = require('./src/routes/loading'); /* add loading*/ 
 var quemsomosRouter = require('./src/routes/quemsomos');
 var clientesRouter = require('./src/routes/clientes')
 var loginRouter = require('./src/routes/login')
@@ -39,6 +40,7 @@ app.use('/nossoscarros', nossoscarrosRouter);
 app.use('/noticias', noticiasRouter);
 app.use('/quemsomos', quemsomosRouter);
 app.use('/clientes', clientesRouter);
+app.use('/loading',loadingRouter); /* add loading*/ 
 app.use('/login', loginRouter);
 app.use('/volvo', volvoRouter);
 app.use('/tesla', teslaRouter);

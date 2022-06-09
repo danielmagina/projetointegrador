@@ -1,23 +1,6 @@
 <%- include('partials/header') %>
 
 <main class="cadastro-bg">
-  <!--<section class="conteudo-cadastro">
-    <h1 class="cadastro-titulo">Cadastro</h1>
-    <form class="form-2" action="./cadastro.html">
-      <div class="cadastro">
-        <div>
-          <label for="email-cadastro">Email</label>
-          <input type="email" id="email-cadastro" name="email-cadastro" placeholder="Seu email">
-        </div>
-        <div>
-          <label for="senha-cadastro">Senha</label>
-          <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Sua Senha">
-        </div>
-        <button type="submit" class="botao cadastrse">Cadastre-se</button>
-        <button type="submit" class="botao">Já é cadastrado?</button>
-      </div>
-    </form>
-  </section>-->
 
   <section class="contato-formulario" aria-label="Formulário">
     <form class="form" action="./enviar_cadastro" method="post"> 
@@ -37,13 +20,13 @@
       </div>
 
       <div >
-        <label for="endereco">Endereço</label>
-        <input type="text" id="endereco" name="endereco" placeholder="Rua/Av Jose Almeida, nº 145">
-      </div>
-
-      <div >
         <label for="cep">CEP</label>
-        <input type="text" id="cep" name="cep" placeholder="00000-000">
+        <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9">
+      </div>
+      
+      <div >
+        <label for="endereco">Endereço</label>
+        <input type="text" id="logradouro" name="endereco" placeholder="Rua/Av Jose Almeida, nº 145">
       </div>
 
       <div >
@@ -53,12 +36,12 @@
 
       <div >
         <label for="cidade">Cidade</label>
-        <input type="text" id="cidade" name="cidade" placeholder="Taubaté">
+        <input type="text" id="localidade" name="cidade" placeholder="Taubaté">
       </div>
 
       <div >
         <label for="estado">Estado</label>
-        <input type="text" id="estado" name="estado" placeholder="SP">
+        <input type="text" id="uf" name="estado" placeholder="SP">
       </div>
       
       <div >
@@ -67,9 +50,13 @@
       </div>
 
       
+      
       <button class="botao col-2">Cadastrar</button>
     </form>
   </section>
+  
 </main>
+
+<script src="javascript/cep.js"></script>
 
 <%- include('partials/footer') %>
