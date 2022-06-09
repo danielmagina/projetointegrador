@@ -32,4 +32,5 @@ img {
   
 img[src$=".jpg"] {
     border-radius: 4px;
+    margin-bottom: 40px;
 }  

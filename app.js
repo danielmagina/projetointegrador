@@ -13,6 +13,9 @@ var noticiasRouter = require('./src/routes/noticias');
 var quemsomosRouter = require('./src/routes/quemsomos');
 var clientesRouter = require('./src/routes/clientes')
 var loginRouter = require('./src/routes/login')
+var volvoRouter = require('./src/routes/volvo')
+var teslaRouter = require('./src/routes/tesla')
+var renaultRouter = require('./src/routes/renault')
 
 
 var app = express();
@@ -37,6 +40,9 @@ app.use('/noticias', noticiasRouter);
 app.use('/quemsomos', quemsomosRouter);
 app.use('/clientes', clientesRouter);
 app.use('/login', loginRouter);
+app.use('/volvo', volvoRouter);
+app.use('/tesla', teslaRouter);
+app.use('/renault', renaultRouter);
 
 app.use((req, res, next)=> {
   res.status(404).render('not-found')
