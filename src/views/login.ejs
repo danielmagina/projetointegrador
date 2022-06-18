@@ -1,23 +1,32 @@
 <%- include('partials/header') %>
 
 <main class="login-bg">
+  <div class="container small">
+    <% if (erros) { %>
+      <ul class="erros">
+        <% erros.forEach(erro => { %>
+          <li><%= erro.msg %></li>
+        <% }) %>
+      </ul>
+    <% } %>
 
-  <section class="contato-formulario" aria-label="Formulário">
-    <form class="form" action="./enviar_login" method="post"> 
-      
-      <div>
+    <h1>Autenticação de usuário</h1>
+
+    <form action="/users/login" method="POST">
+      <div class="field">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="contato@email.com" maxlength="100">
-      </div>
-
-      <div >
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" placeholder="******">
+        <input type="email" id="email" name="email">
       </div>
 
       <a href="./nossoscarros" class="botao col-2">Login</a>
       <a href="./cadastro" class="botao col-2">Cadastre-se</a>
 
+    <div class="field">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha">
+    </div>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+      <button class="botao col-2">Cadastre-se</button>
     </form>
   </section>
 </main>

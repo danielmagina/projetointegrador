@@ -3,15 +3,11 @@
 <main class="cadastro-bg">
 
   <section class="contato-formulario" aria-label="Formulário">
-    <form class="form" action="./enviar_cadastro" method="post"> 
+    
+    <form action="/users/cadastrar" method="POST">
       <div>
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" placeholder="Seu nome" maxlength="200">
-      </div>
-
-      <div>
-        <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999" maxlength="13">
       </div>
 
       <div>
@@ -52,6 +48,12 @@
       
       
       <button class="botao col-2">Cadastrar</button>
+      <div class="field">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha">
+      </div>
+      
+      <button class="botao col-2" type="submit" >Enviar</button>
     </form>
   </section>
   
