@@ -19,25 +19,23 @@ https://www.figma.com/file/Cm01BdkvTXZpOn3Rc2jYqW/EletriCar-Final
 
 ![wire2](https://user-images.githubusercontent.com/86272539/153056753-5a6f5b6c-ee2f-4dd5-a3a4-f8dc4645e6f9.png)
 
-Etapa 2 
 
-A definir..
 
 
 
 # Tecnologias utilizadas 
 ## Back end
 - JavaScript
-- ....
-- .....
+- Node EJS
+- Banco de Dados MySQL
 - .....
 ## Front end
 - HTML / CSS / JS / 
-- ReactJS
 - ....
 - ....
 - ....
-.
+- ....
+
 # Como executar o projeto
 
 ## Back end
@@ -62,9 +60,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/82612638?v=4" width="100px;" alt="Foto do Luis no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/93167604?v=4" width="100px;" alt="Foto do Luis no GitHub"/><br>
         <sub>
-          <b>Luis Dandolini</b>
+          <b>Vitor Pereira</b>
         </sub>
       </a>
     </td>
@@ -76,14 +74,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/95543607?v=4" width="100px;" alt="Foto do Lucas Rocha no GitHub"/><br>
-        <sub>
-          <b>Lucas Rocha</b>
-        </sub>
-      </a>
-       <td align="center">
+          <td align="center">
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/93499268?v=4" width="100px;" alt="Foto do Jonathan no GitHub"/><br>
         <sub>
@@ -116,7 +107,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="#">
         <img src="https://br.digitalhouse.com/wp-content/uploads/2018/02/dh-coding-school-logo.jpg" width="100px;" alt="Foto da Digital House"/><br>
         <sub>
-          <b>Não podemos deixar de agradecer também a instituição e aos professores<br> xxxxx que foram essenciais para o desenvolvimento
+          <b>Não podemos deixar de agradecer também a instituição e aos professores  Bruno Cavalcante Razera e Mario Luz<br> xxxxx que foram essenciais para o desenvolvimento
           do projeto.</b>
         </sub>
       </a>
@@ -131,5 +122,5 @@ Esse projeto está sob licença do MIT. Veja o arquivo [LICENÇA](https://github
 
 # Autores
 
-Daniel Magina ,Jonathan Fernandes, Lucas Rocha, Luis Duarte, Gerciano e Andrey Ventura. 
-https://www.xxxxxx
+Daniel Magina ,Jonathan Fernandes, Vitor Pereira, Gerciano e Andrey Ventura. 
+
