@@ -4,7 +4,7 @@ var router = express.Router();
 
 
 router.get('/', auth, (req, res) => {
-  res.render('nossoscarros');
+  res.render('nossoscarroslogado');
 });
 
 module.exports = router;

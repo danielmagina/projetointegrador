@@ -12,6 +12,7 @@ var usersRouter = require('./src/routes/users');
 var indexRouter = require('./src/routes/index');
 var contatoRouter = require('./src/routes/contato');
 var cadastroRouter = require('./src/routes/cadastro');
+var cadastroClienteRouter = require('./src/routes/cadastroCliente')
 var nossoscarrosRouter = require('./src/routes/nossoscarros');
 var nossoscarroslogadoRouter = require('./src/routes/nossoscarroslogado');
 var noticiasRouter = require('./src/routes/noticias');
@@ -47,6 +48,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/contato', contatoRouter);
 app.use('/cadastro', cadastroRouter);
+app.use('/cadastroCliente', cadastroClienteRouter);
 app.use('/nossoscarros', nossoscarrosRouter);
 app.use('/nossoscarroslogado', nossoscarroslogadoRouter);
 app.use('/noticias', noticiasRouter);
