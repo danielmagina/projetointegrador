@@ -1,26 +1,29 @@
 <%- include('partials/header') %>
-
 <main class="login-bg">
+    <section class="contato-formulario" aria-label="Formulário">
+    
+      <form class="form" action="/users/login" method="post"> 
+        
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="contato@email.com" maxlength="100">
+        </div>
+  
+        <div >
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="******">
+        </div>
+  
+        <button class="botao col-2" type="submit">Enviar</button>
 
-  <section class="contato-formulario" aria-label="Formulário">
-    <form class="form" action="./enviar_login" method="post"> 
       
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="contato@email.com" maxlength="100">
-      </div>
-
-      <div >
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" placeholder="******">
-      </div>
-
-      <a href="./nossoscarros" class="botao col-2">Login</a>
-      <a href="./cadastro" class="botao col-2">Cadastre-se</a>
-
-    </form>
-  </section>
+        <a href="cadastro" class="botao col-2">Cadastre-se</a>
+  
+      </form>
+    </section>
 </main>
+
+
 <br>
 <br>
 <br>

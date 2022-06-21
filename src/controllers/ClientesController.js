@@ -1,5 +1,5 @@
 
-const {Cliente} = require ('../models');
+const {Cliente} = ('../models');
 
 module.exports = {
     async index(req, res) {
