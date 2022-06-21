@@ -11,8 +11,9 @@ var session = require('express-session');
 var usersRouter = require('./src/routes/users');
 var indexRouter = require('./src/routes/index');
 var contatoRouter = require('./src/routes/contato');
-//var cadastroRouter = require('./src/routes/cadastro');
+var cadastroRouter = require('./src/routes/cadastro');
 var nossoscarrosRouter = require('./src/routes/nossoscarros');
+var nossoscarroslogadoRouter = require('./src/routes/nossoscarroslogado');
 var noticiasRouter = require('./src/routes/noticias');
 var loadingRouter = require('./src/routes/loading'); /* add loading*/ 
 var quemsomosRouter = require('./src/routes/quemsomos');
@@ -45,7 +46,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/contato', contatoRouter);
+app.use('/cadastro', cadastroRouter);
 app.use('/nossoscarros', nossoscarrosRouter);
+app.use('/nossoscarroslogado', nossoscarroslogadoRouter);
 app.use('/noticias', noticiasRouter);
 app.use('/quemsomos', quemsomosRouter);
 app.use('/clientes', clientesRouter);
@@ -54,7 +57,7 @@ app.use('/login', loginRouter);
 app.use('/volvo', volvoRouter);
 app.use('/tesla', teslaRouter);
 app.use('/renault', renaultRouter);
-//app.use('/login', loginRouter);
+app.use('/login', loginRouter);
 app.use('/users', usersRouter);
 
 app.use((req, res, next)=> {

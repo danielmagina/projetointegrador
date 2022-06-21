@@ -48,6 +48,6 @@ module.exports = {
 
     req.session.usuario = user;
 
-    return res.redirect('/nossoscarros');
+    return res.redirect('/nossoscarroslogado');
   }
 }

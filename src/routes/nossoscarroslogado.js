@@ -1,8 +1,9 @@
 var express = require('express');
+var auth = require('../middlewares/auth');
 var router = express.Router();
 
 
-router.get('/', (req, res) => {
+router.get('/', auth, (req, res) => {
   res.render('nossoscarros');
 });
 

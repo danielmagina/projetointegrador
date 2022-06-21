@@ -1,4 +1,4 @@
-.cadastro-titulo {
+.contato-formulário {
     margin-top: 80px;
     margin-bottom: 40px;
     font-size: 64px;
@@ -8,6 +8,7 @@
 
 .cadastro {
     grid-column-start: 2;
+    
 }
 
 .cadastro-bg {
@@ -17,6 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
+    
 }
 
 /* PAGINA CLIENTES TESTE */   
